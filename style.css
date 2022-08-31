@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: #F0EEED;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recipeContainer{
+    width: 75%;
+    box-shadow: 0 0 10px 2px #3333331a;
+    
+}
+#searchBar > *{
+    display: block;   
+}
+#searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+#button{
+    cursor: pointer;
+}
+#input{
+    border: none;
+    width: 15rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    border-radius: 20px;
+}
+#favoriteSection{
+    background-color: #F5E5FF;
+}
+.favorite-title{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    margin: 0;
+}
+#mealPic{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+#mealContainer{
+    width: 65%;
+    margin: 1rem auto;
+    box-shadow: 0 0 10px 2px #3333331a;   
+}
+#mealContainer > *{
+    display: block;
+}
+#mealHeader{
+    
+    position: relative;
+}
+#randomSign{
+    position: absolute;
+    background-color: #fff;
+    margin: .4rem;
+    padding: .2rem;
+    border-radius: 5px;
+}
+#mealBody{
+    display: flex;
+    align-items: center;
+    border: 3px solid #eee;
+}
+#mealName{
+    width:90%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+#collect{
+    cursor: pointer;
+    width: 10%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+
+/* favCard style */
+#favCardImg{
+    display: block;
+    width: 35%;
+    border-radius: 50%;
+    margin: auto;
+}
+#favoriteContainer{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    overflow: auto;
+    padding: .5rem   0;
+    margin-top: 0;
+}
+#favCardContainer{
+    width: 5rem;
+    list-style: none;
+    margin: 0 .3rem;
+}
+
+
+#favCardContainer *{
+    display: block;
+}
+#favCardContainer #favCardName{
+    font-size: .5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    
+}
+#removeFavBtn{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background-color: #F5E5FF;
+}
+#favCardContainer:hover #removeFavBtn{
+    opacity: 1;
+}
+
+/* Recipe */
+#recipeMealName{
+    text-align: center;
+}
+#recipeInfoContainer{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+#recipeInfo{
+    width: 45%;
+    margin: auto;
+    background-color: #fff;
+    
+}
+#closeBtn{
+    cursor: pointer;
+    position: absolute;
+    left: 75%;
+    border: none;
+}
+#recipePic{
+    display: block;
+    width: 100%;
+}
+#instruction{
+    margin: 1.25rem 1rem;
+    line-height: 1.25;
+}
+#indredient{
+    margin: .5rem 0;
+    font-weight: bold;
+}
+@media (max-width: 500px) {
+    #recipeContainer{
+        width: 90%;
+    }
+    #mealContainer{
+        width: 90%;
+    }
+}
+@media (min-width: 1200px) {
+    #recipeContainer{
+        width: 40%;
+    }
+}
